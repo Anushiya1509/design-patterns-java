@@ -37,7 +37,7 @@ public class DiscountController {
         } catch (IllegalArgumentException e) {
             logger.error("Invalid userType input: {}", request.getUserType(), e);
             return ResponseEntity.badRequest().body(Map.of(
-                    "error", "Invalid userType. Expected one of: GUEST, BEAUTY_INSIDER, VIB, ROUGE"
+                    "error", "Invalid User Type. Expected one of: GUEST, BEAUTY_INSIDER, VIB, ROUGE"
             ));
 
         } catch (Exception e) {
